@@ -1,0 +1,27 @@
+# test_samochod.py
+from samochod import Samochod
+
+# Przykładowe użycie klasy Samochod
+if __name__ == "__main__":
+    # Stworzenie obiektu Samochod
+    samochod1 = Samochod("Toyota", "Corolla", 2020, "ABC1234", 100.0)
+
+    # Wyświetlenie informacji o samochodzie i czy jest dostępny
+    print(samochod1)
+    print(f"Samochód jest dostępny: {samochod1.czy_dostepny()}")
+    
+    # Obliczenie kosztu wypożyczenia na 5 dni
+    print(f"Koszt wypożyczenia na 5 dni: {samochod1.oblicz_koszt_wypozyczenia(5)} zł")
+
+    # Wypożyczenie samochodu
+    if samochod1.oznacz_jako_wypozyczony("WYP-001"):
+        print("Samochód został wypożyczony.")
+
+    print(f"Samochód po wypożyczeniu jest dostępny: {samochod1.czy_dostepny()}")
+
+    # Zwrócenie samochodu
+    samochod1.oznacz_jako_dostepny()
+    print("Samochód został zwrócony i jest teraz dostępny.")
+
+    # Wyświetlenie opisu samochodu
+    print(samochod1.opis())
