@@ -10,7 +10,7 @@ class Pracownik:
         staż_pracy (int): Liczba lat pracy
         zarobki (int): Zarobki pracownika
     """
-    def __init__(self, imie, nazwisko, numer_id, staż_pracy, zarobki):
+    def __init__(self, imie: str, nazwisko: str, numer_id: int, staż_pracy: int, zarobki: int):
         """
         Inicjalizuje nowego pracownika.
         """
@@ -27,17 +27,7 @@ class Pracownik:
         return (f"Pracownik {self.imie} {self.nazwisko} z nr id: {self.numer_id} "
                 f"zarabia {self.zarobki} zł, mając staż pracy {self.staż_pracy} lat.")
 
-pracownicy = [
-    Pracownik("Jan", "Nowak", 321, 5, 5500),
-    Pracownik("Anna", "Kowalska", 322, 8, 7200),
-    Pracownik("Piotr", "Poznański", 323, 3, 4800),
-    Pracownik("Maria", "Warszawska", 324, 10, 8000),
-    Pracownik("Tomasz", "Krakowski", 325, 2, 4100),
-    Pracownik("Izabela", "Wrocławska", 326, 6, 6300)
-]
 
-for pracownik in pracownicy:
-    print(pracownik)
 
 
 class TestPracownik(unittest.TestCase):
