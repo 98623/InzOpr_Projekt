@@ -27,12 +27,38 @@ class Customer:
         self.email = email
         self.license_number = license_number
 
+    def get_full_name(self) -> str:
+        """
+        Zwraca pełne imię i nazwisko klienta.
+
+        Returns:
+            str: Pełne imię i nazwisko klienta.
+        """
+        return f"{self.first_name} {self.last_name}"
+
+
+def validate_email(self):
+    """
+    Sprawdza czy email jest poprawny.
+
+    Returns:
+        bool: True jeśli email jest poprawny, False w przeciwnym razie.
+    """
+    return "@" in self.email
+
+
+def __str__(self) -> str:
+    """
+    Zwraca reprezentację tekstową klienta.
+
+    Returns:
+        str: Reprezentacja tekstowa klienta.
+    """
+    return f"Klient: {self.get_full_name()} (ID: {self.customer_id}, Email: {self.email})"
 
 
 if __name__ == "__main__":
-    c = Customer(1, "Jan", "Kowalski", "jan.kowalski@mail.com", "ABC12345")
-    print("Id klienta:", c.customer_id)
-    print("Imię klienta:", c.first_name)
-    print("Nazwisko klienta:", c.last_name)
-    print("Email klienta:", c.email)
-    print("Numer prawa jazdy:", c.license_number)
+    klient = Customer(1, "Jan", "Kowalski", "jan.kowalski@gmail.com", "CW123")
+    print(klient)
+    print(f"Pełne imię: {klient.get_full_name()}")
+    print(f"Email poprawny: {klient.validate_email()}")
