@@ -1,6 +1,6 @@
-Projekt Inżynieria Oprogramowania
+#Projekt Inżynieria Oprogramowania - Wypożyczalnia samochodów
 
-Ten projekt ma na celu stworzenie prostego systemu wypożyczalni samochodów w Pythonie, z podziałem na klasy i testami.
+##Ten projekt ma na celu stworzenie prostego systemu wypożyczalni samochodów w Pythonie, z podziałem na klasy i testami.
 
 Projekt posiada 5 klas: klient, pracownik, samochód, wypożyczenie i wypożyczalnia.
 Klient - zawiera dane klient + testy - Daniel Okołowicz 
