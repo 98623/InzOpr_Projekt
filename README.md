@@ -3,11 +3,18 @@
 ### Ten projekt ma na celu stworzenie prostego systemu wypożyczalni samochodów w Pythonie, z podziałem na klasy i testami.
 
 Projekt posiada 5 klas: klient, pracownik, samochód, wypożyczenie i wypożyczalnia.
+
+
 Klient - zawiera dane klient + testy - Daniel Okołowicz 
+
 Pracownik - zawiera dane pracowników + testy  - Adam Forycki
+
 Samochód - zawiera informacje o samochodach + testy  - Kacper Lewicki 
+
 Wypożyczenie - informacje o wypożyczonych samochodach + testy  - Emil Cichowski
+
 Wypożyczalnia - system do wypożyczania samochodów + testy  - Jacek Adamczewski
+
 
 Wszytskie niezbędne do działania projektu biblioteki znajdują się bezpośrednio w programie Python
 
