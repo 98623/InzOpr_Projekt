@@ -37,24 +37,24 @@ class Customer:
         return f"{self.first_name} {self.last_name}"
 
 
-def validate_email(self):
-    """
-    Sprawdza czy email jest poprawny.
+    def validate_email(self):
+        """
+        Sprawdza czy email jest poprawny.
 
-    Returns:
-        bool: True jeśli email jest poprawny, False w przeciwnym razie.
-    """
-    return "@" in self.email
+        Returns:
+            bool: True jeśli email jest poprawny, False w przeciwnym razie.
+        """
+        return "@" in self.email
 
 
-def __str__(self) -> str:
-    """
-    Zwraca reprezentację tekstową klienta.
+    def __str__(self) -> str:
+        """
+        Zwraca reprezentację tekstową klienta.
 
-    Returns:
-        str: Reprezentacja tekstowa klienta.
-    """
-    return f"Klient: {self.get_full_name()} (ID: {self.customer_id}, Email: {self.email})"
+        Returns:
+            str: Reprezentacja tekstowa klienta.
+        """
+        return f"Klient: {self.get_full_name()} (ID: {self.customer_id}, Email: {self.email})"
 
 
 if __name__ == "__main__":
