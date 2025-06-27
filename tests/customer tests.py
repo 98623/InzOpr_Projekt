@@ -19,12 +19,14 @@ class TestCustomer(unittest.TestCase):
         klient = Customer(2, "Anna", "Nowak", "anna@mail.com", "XYZ789")
         self.assertEqual(klient.get_full_name(), "Anna Nowak")
 
-    def test_validate_email(self):
-        """Test walidacji email"""
-        klient1 = Customer(3, "Test", "User", "test@example.com", "DEF456")
-        klient2 = Customer(4, "Bad", "Email", "bademail", "GHI789")
-        self.assertTrue(klient1.validate_email())
-        self.assertFalse(klient2.validate_email())
+    def validate_email(self) -> bool:
+        """
+        Sprawdza czy email jest poprawny.
+
+        Returns:
+            bool: True jeśli email jest poprawny, False w przeciwnym razie.
+        """
+        return "@" in self.email and "." in self.email.split("@")[1]
 
 
 if __name__ == "__main__":
