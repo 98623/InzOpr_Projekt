@@ -1,6 +1,6 @@
-#Projekt Inżynieria Oprogramowania - Wypożyczalnia samochodów
+# Projekt Inżynieria Oprogramowania - Wypożyczalnia samochodów
 
-##Ten projekt ma na celu stworzenie prostego systemu wypożyczalni samochodów w Pythonie, z podziałem na klasy i testami.
+### Ten projekt ma na celu stworzenie prostego systemu wypożyczalni samochodów w Pythonie, z podziałem na klasy i testami.
 
 Projekt posiada 5 klas: klient, pracownik, samochód, wypożyczenie i wypożyczalnia.
 Klient - zawiera dane klient + testy - Daniel Okołowicz 
@@ -9,7 +9,7 @@ Samochód - zawiera informacje o samochodach + testy  - Kacper Lewicki
 Wypożyczenie - informacje o wypożyczonych samochodach + testy  - Emil Cichowski
 Wypożyczalnia - system do wypożyczania samochodów + testy  - Jacek Adamczewski
 
-Do prawidłowego działania projektu potrzeba zainstalować bibliotekę unittest
+Wszytskie niezbędne do działania projektu biblioteki znajdują się bezpośrednio w programie Python
 
 Projekt ten może posłużyć jako fundament prostego systemu zarządzania wypożyczalnią samochodów. 
 Przykładowe zastosowania:
