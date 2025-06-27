@@ -137,7 +137,7 @@ class Wypozyczalnia:
         )
         
         # Oznacza samochód jako wypożyczony
-        samochod.oznacz_jako_wypozyczony(numer_wypozyczenie)
+        samochod.oznacz_jako_wypozyczony(numer_wypozyczenia)
         
         # Dodaje wypożyczenie do listy
         self.wypozyczenia.append(wypozyczenie)
