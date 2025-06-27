@@ -75,16 +75,18 @@ class Samochod:
         self.aktualny_numer_wypozyczenia = None
         return True
 
-    def oblicz_koszt_wypozyczenia(self, dni) -> float:
+    def oblicz_koszt_wypozyczenia(self, dni: int) -> float:
         """
         Oblicza koszt wypożyczenia samochodu na określoną liczbę dni
 
-        Argumenty:
+        Args:
             dni (int): Liczba dni wypożyczenia
 
-        Zwraca:
+        Returns:
             float: Całkowity koszt wypożyczenia
         """
+        if dni <= 0:
+            return 0.0
         return round(self.dzienna_rata_wypozyczenia * dni, 2)
     
     def czy_dostepny(self) -> bool:
