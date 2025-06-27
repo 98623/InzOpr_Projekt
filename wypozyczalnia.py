@@ -45,20 +45,28 @@ class Wypozyczalnia:
         """
         self.klienci.append(klient)
 
-    def znajdz_klienta(self, customer_id: int) -> Customer:
+    def znajdz_klienta(self, customer_id: int) -> Optional[Customer]:  # ZMIENIONE: Dodany Optional
         """
         Znajduje klienta po ID.
-        
+
         Args:
             customer_id (int): ID klienta
-            
+
         Returns:
-            Customer: Klient o podanym ID lub None jeśli nie znaleziono
+            Optional[Customer]: Klient o podanym ID lub None jeśli nie znaleziono
         """
         for klient in self.klienci:
             if klient.customer_id == customer_id:
                 return klient
         return None
+
+        # Oznacza samochód jako wypożyczony
+        samochod.oznacz_jako_wypozyczony(numer_wypozyczenia)  # ZMIENIONE: Poprawiona nazwa zmiennej
+
+        # Dodaje wypożyczenie do listy
+        self.wypozyczenia.append(wypozyczenie)
+
+        return numer_wypozyczenia
 
     def znajdz_samochod(self, numer_rejestracyjny: str) -> Optional[Samochod]:
         """
